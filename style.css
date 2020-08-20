@@ -1,0 +1,438 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  margin: 0 auto;
+  width: 1440px;
+  padding: 0;
+}
+
+.promo-page {
+  background: url('./images/header-bg.jpg');
+  padding-bottom: 83px;
+}
+
+.header {
+  height: 96px;
+  display: flex;
+  padding-left: 80px;
+}
+
+.header-menu {
+  display: flex;
+  margin: 0;
+  padding-top: 39px;
+}
+
+.header-menu * {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.header-menu__item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  width: 133px;
+}
+
+#header-logo {
+  background: url(./images/Vector.png);
+  height: 150px;
+  width: 150px;
+  margin-left: 32px;
+  margin-right: 35px;
+  transform: translateY(-17px);
+}
+
+.services {
+  display: flex;
+  padding-top: 225px;
+  padding-left: 83px;
+}
+
+.services__img {
+  margin-right: 200px;
+}
+
+.services-content {
+  flex-direction: column;
+  margin-right: 190px;
+  padding-left: 78px;
+}
+
+.services__content-subtitle {
+  color: #fff;
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.5em;
+  margin-left: 285px;
+  text-transform: uppercase;
+  transform: translateY(-11px);
+}
+
+.services__content-title {
+  border-bottom: #e8c300;
+  border-bottom-width: 5px;
+  color: #fff;
+  font-family: Baumans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 96px;
+  line-height: 0px;
+  margin-bottom: 70px;
+  margin-top: 55px;
+  text-transform: uppercase;
+}
+
+.services-content .content__rectangle {
+  background: #e8c300;
+  border-radius: 50px;
+  margin-bottom: 30px;
+  margin-left: 320px;
+  height: 5px;
+  width: 40px;
+}
+
+.services__btn_booking,
+.services__btn_search {
+  border-radius: 5px;
+  color: #fff;
+  height: 60px;
+  width: 200px;
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+}
+
+.services__btn_booking {
+  background: #e8c300;
+  border: 1px #000;
+  margin-left: 128px;
+  margin-right: 35px;
+}
+
+.services__btn_search {
+  background: transparent;
+  border: 1px solid #fff;
+}
+
+.socials__item {
+  margin-bottom: 13px;
+}
+
+.scroll {
+  display: flex;
+  margin: 0 auto;
+  width: 60px;
+}
+
+.intro__heading {
+  font-family: Baumans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
+.intro__caption {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.intro__description {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.staff__subtitle {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+}
+
+.staff__title {
+  font-family: Baumans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
+.staff__caption {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.staff__description {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.booking__title {
+  font-family: Baumans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
+.booking-form__name,
+.booking-form__phone,
+.booking-form__date,
+.booking-form__email,
+.booking-form__guest-num,
+.booking-form__time {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-indent: 20px;
+}
+
+.booking-form__reserve {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.booking__contact {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.specialties__subtitle {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.5em;
+  text-transform: uppercase
+}
+
+.specialties__title {
+  font-family: Baumans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
+.specialties__caption {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.specialties__description {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.menu__title {
+  font-family: Baumans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
+.menu__caption {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.menu-card * {
+  display: inline-flex;
+  text-decoration: none;
+}
+
+.menu-card__item {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.prices {
+  display: flex;
+}
+
+.price-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-item__name,
+.price-item__total {
+  font-family: Baumans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.price-item-punctuation {
+  height: 18px;
+  width: 18px;
+  border-bottom-style: dotted;
+  font-family: Baumans;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.price-item__info {
+  color: rgba(51, 51, 51, 0.5);
+  font-family: Baumans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.events__subtitle {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.5em;
+  text-transform: uppercase; 
+}
+
+.weddings__title,
+.corporate-parties__title {
+  font-family: Baumans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 12px;
+  text-indent: 20px;
+  text-transform: uppercase;
+}
+
+.events__contact {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.contact__title {
+  font-family: Baumans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+ 
+.contact__caption {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.contact__name,
+.contact__email,
+.contact__phone,
+.contact__message {
+  color: rgba(51, 51, 51, 0.5);
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-indent: 20px;
+}
+
+.company-details {
+  color: rgba(51, 51, 51, 0.5);
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  list-style-type: none;
+}
+
+.company-details * {
+  display: inline-flex;
+}
+
+.company-details__location i,
+.company-details__phone i,
+.company-details__email i {
+  color: #e8c300;
+  margin-right: 10px;
+}
+
+.contact__submission {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.footer__copyright {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+}
