@@ -9,8 +9,7 @@ body {
 }
 
 .promo-page {
-  background: url('./images/header-bg.jpg');
-  background-position: center center no-repeat;
+  background: url('./images/header-bg.jpg') center center no-repeat;
   background-size: cover;
   padding-bottom: 83px;
 }
@@ -112,7 +111,7 @@ body {
   color: #fff;
   height: 60px;
   width: 200px;
-  font-family: Open Sans, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
