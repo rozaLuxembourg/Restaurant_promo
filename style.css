@@ -16,15 +16,15 @@ body {
 }
 
 .header {
-  height: 96px;
+  height: 99px;
   display: flex;
-  padding-left: 80px;
+  padding-left: 78px;
 }
 
 .header-menu {
   display: flex;
   margin: 0;
-  padding-top: 39px;
+  padding-top: 41px;
 }
 
 .header-menu * {
@@ -78,6 +78,7 @@ body {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.5em;
+  margin-bottom: 9px;
   margin-left: 285px;
   text-transform: uppercase;
   transform: translateY(-11px);
@@ -91,9 +92,9 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 96px;
-  line-height: 0px;
-  margin-bottom: 70px;
-  margin-top: 55px;
+  line-height: 1;
+  margin-bottom: 20px;
+  margin-top: 0;
   text-transform: uppercase;
 }
 
@@ -106,8 +107,14 @@ body {
   width: 40px;
 }
 
-.services__btn_booking,
-.services__btn_search {
+.services-buttons {
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.services-buttons button {
   border-radius: 5px;
   color: #fff;
   height: 60px;
@@ -117,15 +124,13 @@ body {
   font-weight: bold;
   font-size: 12px;
   line-height: 20px;
-  margin-bottom: 80px;
   text-transform: uppercase;
 }
 
 .services__btn_booking {
   background: #e8c300;
   border: 1px #000;
-  margin-left: 128px;
-  margin-right: 35px;
+  margin-right: 40px;
 }
 
 .services__btn_search {
@@ -251,7 +256,7 @@ body {
 }
 
 .staff-info {
-  color: #FFFFFF;
+  color: #fff;
   flex-direction: column;
   padding-left: 23px;
   padding-right: 100px;
@@ -817,22 +822,12 @@ input::placeholder {
   color: #e8c300;
   font-size: 14px;
   line-height: 14px;
-}
-
-.company-details__location i {
-  margin-right: 10px;
-}
-
-.company-details__phone i {
-  margin-right: 95px;
-}
-
-.company-details__location {
   margin-right: 15px;
 }
 
-.company-details__email i {
-  margin-right: 20px;
+.company-details__location,
+.company-details__phone {
+  margin-right: 30px;
 }
 
 .contact__submission {
@@ -881,5 +876,463 @@ input::placeholder {
   font-size: 12px;
   line-height: 12px;
   text-align: center;
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  body {
+    margin: 0 auto;
+    max-width: 1280px;
+    min-width: 1024px;
+    padding: 0;
+  }
+
+  .promo-page {
+    padding-bottom: 6vw;
+  }
+
+  .header {
+    height: 92px;
+    padding-left: 60px;
+  }
+
+  .header-menu {
+    display: flex;
+    margin: 0;
+    padding-top: 34px;
+  }
+
+  .header-menu__item {
+    line-height: 16px;
+    text-align: center;
+    width: 115px;
+  }
+
+  #header-logo {
+    margin-left: 3.5vw;
+    margin-right: 3.5vw;
+  }
+
+  .services {
+    padding-top: 12vw;
+    padding-left: 7.5vw;
+  }
+
+  .services__img {
+    margin-right: 12vw;
+  }
+
+  .services-content {
+    margin-right: 11vw;
+    padding-left: 9vw;
+  }
+
+  .services__content-subtitle {
+    margin-bottom: 1.2vw;
+    margin-left: 37%;
+    text-transform: uppercase;
+  }
+
+  .services__content-title {
+    font-size: 85px;
+    line-height: 1;
+    margin-bottom: 2.5vw;
+  }
+
+  .services-content .content__rectangle {
+    margin-bottom: 4vw;
+    margin-left: 39%;
+    width: 42px;
+  }
+
+  .services-buttons {
+    height: 55px;
+    margin-bottom: 6.5vw;
+  }
+
+  .services-buttons button {
+    height: 55px;
+    width: 190px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .services__btn_booking {
+    margin-right: 35px;
+  }
+
+  .socials {
+    padding: 0;
+  }
+
+  .socials__item {
+    margin-bottom: 1.8vw;
+  }
+
+  .intro-content {
+    padding-left: 1,5vw; 
+    padding-top: 14vw;
+  }
+
+  .intro__heading {
+    font-size: 34px;
+    line-height: 40px;
+    margin-bottom: 1.3vw;
+  }
+
+  .intro__caption {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 2vw;
+    margin-right: 6vw;
+    margin-top: 1.5vw;
+  }
+
+  .intro__description {
+    font-size: 13px;
+    line-height: 20px;
+    margin-right: 5vw;
+  }
+
+  .intro-rectangle .rectangle-yellow,
+  .staff-rectangle .rectangle-yellow {
+    height: 5px;
+    width: 62px;
+  }
+
+  .intro-rectangle .rectangle-yellow {
+    margin-left: 43%;
+  }
+
+  .intro-images {
+    padding-top: 5.5vw;
+    width: 50%;
+ }
+
+  .intro__photo {
+    z-index: 1;
+    transform: translateX(-10px);
+  }
+
+  .intro__add-img {
+    transform: translateX(-305px);
+    z-index: 2;
+  }
+  
+  .staff {
+    padding-bottom: 3vw;
+    padding-top: 2.5vw;
+  }
+
+  .staff__img {
+  	margin-left: -30px;
+    transform: translateY(-15px);
+  }
+
+  .staff-info {
+    padding-left: 4vw;
+    padding-right: 8vw;
+    padding-top: 8vw;
+  }
+
+  .staff__title {
+    font-size: 34px;
+    line-height: 40px;
+    margin-bottom: 1.3vw;
+  }
+
+  .staff-rectangle .rectangle-yellow {
+    margin-left: 43%;
+  }
+
+  .staff__caption {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 2vw;
+    margin-top: 1.5vw;
+  }
+
+  .staff__description {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .booking {
+    padding-bottom: 3.5vw;
+  }
+
+  .booking-content {
+    padding-left: 7vw;
+    padding-right: 8vw;
+  }
+
+  .booking-details {
+    padding-top: 11vw;
+  }
+
+  .booking__title {
+    font-size: 34px;
+    line-height: 40px;
+    margin-bottom: 1.3vw;
+    margin-left: 32%;
+  }
+
+  .booking-rectangle .rectangle-yellow {
+    margin-left: 42%;
+    width: 63px;
+  }
+
+  .booking-form-row {
+    height: 55px;
+  }
+
+  .booking-form__name,
+  .booking-form__phone,
+  .booking-form__date,
+  .booking-form__email,
+  .booking-form__guest-num,
+  .booking-form__time {
+    height: 55px;
+    width: 265px;
+  }
+
+  .booking-form-row__cell {
+    height: 55px;
+    width: 265px;
+  }
+
+  .booking-form-row__cell select {
+    width: 245px;
+  }
+
+  .booking-form__reserve {
+    height: 55px;
+    width: 540px;
+  }
+
+  .booking-img {
+    padding-top: 5vw;
+  }
+
+  .clock__img {
+    transform: translateX(-15px);
+    z-index: 1;
+  }
+
+  .clock__add-img {
+    transform: translateX(-295px);
+    z-index: 2;
+  }
+
+  .specialties {
+    padding-bottom: 3.5vw;
+    padding-top: 2.5vw;
+  }
+
+  .specialties__add-img {
+  	transform: translateX(-15px);
+    transform: translateY(-20px);
+    z-index: 2;
+  }
+
+  .specialties__img {
+    margin-top: -15px;
+    transform: translateX(-315px);
+    z-index: 1;
+  }
+
+  .specialties-info {
+    margin-right: 3vw;
+    padding-top: 8vw;
+  }
+
+  .specialties__title {
+    font-size: 34px;
+    line-height: 40px;
+    margin-bottom: 1.3vw;
+  }
+
+  .specialties-rectangle .rectangle-yellow {
+    margin-left: 43%;
+    width: 66px;
+  }
+
+  .specialties__caption {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 2vw;
+    margin-top: 1.5vw;
+    margin-right: 3.5vw;
+  }
+
+  .specialties__description {
+    font-size: 13px;
+    line-height: 20px;
+    margin-left: 4vw;
+    margin-right: 3.5vw;
+  }
+
+  .menu {
+    padding-bottom: 6.5vw;
+    padding-top: 7vw;
+  }
+
+  .menu__title {
+    font-size: 34px;
+    line-height: 40px;
+    margin-bottom: 1.3vw;
+  }
+
+  .menu-rectangle .rectangle-yellow {
+    margin-left: 48%;
+    width: 64px;
+  }
+
+  .menu__caption {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 2vw 31% 4.5vw 31%;
+  }
+
+  .menu-card {
+    margin-bottom: 5vw;
+    margin-left: 18%;
+  }
+
+  .menu-card__item {
+    height: 47px;
+    font-size: 12px;
+    line-height: 16px;
+    padding-top: 1.3vw;
+    width: 115px;
+  }
+
+  .prices {
+    padding-left: 7vw;
+  }
+
+  .price-list {
+    margin-right: 8.5vw;
+    width: 350px;
+  }
+
+  .price-item {
+    margin-bottom: 1.8vw;
+  }
+
+  .price-item__name,
+  .price-item__total {
+    font-size: 16px;
+    line-height: 16px;
+    margin-right: 1.2vw;
+  }
+
+  .price-item__name:after {
+    margin-left: 0.8vw;
+  }
+
+  .price-item__info {
+    font-size: 13px;
+    line-height: 13px;
+  }
+
+  .events {
+    padding-bottom: 3vw;
+    padding-top: 2.5vw;
+  }
+
+  .events-photos {
+    transform: translateY(2px);
+  }
+  
+  .wedding-ring__img {
+    transform: translateX(-20px);
+  }
+
+  .corporate-parties__img {
+    transform: translateX(-15px);
+  }
+
+  .photo-galerie {
+  	display: flex;
+  }
+
+  .interior-photos * {
+    width: 25%;
+  }
+
+  .contact-info {
+    padding-bottom: 2.7vw;
+    padding-top: 6vw;
+  }
+
+  .contact-rectangle .rectangle-yellow {
+    margin-left: 48%;
+    width: 63px;
+  }
+
+  .contact__title {
+    font-size: 34px;
+    line-height: 40px;
+    margin-bottom: 1.3vw;
+  }
+ 
+  .contact__caption {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 2vw 31% 4.5vw 31%;
+  }
+
+  .client-contact {
+    margin-left: 7vw;
+    margin-right: 5vw;
+    transform: translateY(-15px);
+    width: 88%;
+  }
+
+  .client-contact-row {
+  	width: 100%;
+  }
+
+  .client-contact-row__cell {
+    line-height: 18px;
+    margin-right: 1vw;
+    height: 55px;
+    width: 367px;
+  }
+
+  .client-contact__message {
+    line-height: 18px;
+    padding-top: 1.5vw;
+    height: 110px;
+    width: 100%;
+  }
+
+  .company-details {
+    height: 55px;
+    line-height: 18px;
+  }
+  .company-details__location,
+  .company-details__phone {
+    margin-right: 25px;
+  }
+
+  .contact__submission {
+    height: 55px;
+    line-height: 18px;
+    padding-top: 0.7vw;
+  }
+
+  .map-img {
+    height: 440px;
+  }
+
+  .footer {
+    padding-bottom: 3.5vw;
+    padding-top: 3.2vw;
+  }
+
+  .footer__copyright {
+    line-height: 14px;
+  }
 }
 
