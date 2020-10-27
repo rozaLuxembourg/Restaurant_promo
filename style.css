@@ -524,6 +524,7 @@ body {
 }
 
 .switch-block__point {
+  cursor: pointer;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   margin-right: 20px;
@@ -532,6 +533,7 @@ body {
 }
 
 .switch-block__point_active {
+  cursor: pointer;
   background: #fff;
   border-radius: 50%;
   margin-right: 20px;
@@ -773,7 +775,7 @@ body {
   text-indent: 20px;
   margin-right: 11px;
   height: 60px;
-  width: 420px;
+  width: 419px;
 }
 
 .client-contact__message {
@@ -877,6 +879,82 @@ input::placeholder {
   line-height: 12px;
   text-align: center;
 }
+
+/* Анимация к ссылкам, кнопкам, элементам формы меню */
+.header-menu__item,
+.header-menu__item:after,
+.header-menu__item:before,
+.menu-card__item,
+.menu-card__item:after,
+.menu-card__item:before {
+  transition: all .5s;
+}
+
+.header-menu__item:hover,
+.menu-card__item:hover {
+  color: #e8c300;
+}
+
+/* Подчеркивание*/
+
+nav.header-menu a,
+nav.menu-card a {
+  position: relative;
+}
+
+nav.header-menu a:after,
+nav.menu-card a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #e8c300;
+  height: 3px;
+}
+
+nav.header-menu a:hover:after,
+nav.menu-card a:hover:after {
+  width: 100%;
+}
+
+/* Кнопки */
+.services-buttons button:before,
+.services-buttons button:after,
+.booking-form button:before,
+.booking-form button:after,
+.company-contact-row button:before,
+.company-contact-row button:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  box-sizing: border-box;
+}
+
+button:hover {
+  cursor: pointer; 
+  background: rgba(255,255,255,.3); 
+  color: #e8c300; 
+  border: 2px solid #e8c300; 
+  transform: translateY(-5px);
+  transition: all 2s ease;
+}
+
+/*Эл-ты контактных форм*/
+.booking-form .booking-form-row input:hover,
+.booking-form .booking-form-row__cell:hover,
+.client-contact .client-contact-row input:hover,
+.client-contact .client-contact__message:hover {
+  cursor: pointer;
+  border: 2px solid #5a5a5a;
+  color: #5a5a5a;
+}
+
 
 @media (min-width: 1024px) and (max-width: 1280px) {
   body {
@@ -1245,11 +1323,11 @@ input::placeholder {
   }
   
   .wedding-ring__img {
-    transform: translateX(-20px);
+    transform: translateX(-50px);
   }
 
   .corporate-parties__img {
-    transform: translateX(-15px);
+    transform: translateX(-40px);
   }
 
   .photo-galerie {
@@ -1290,14 +1368,15 @@ input::placeholder {
   }
 
   .client-contact-row {
-  	width: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 
   .client-contact-row__cell {
     line-height: 18px;
-    margin-right: 1vw;
     height: 55px;
-    width: 367px;
+    width: 368px;
   }
 
   .client-contact__message {
