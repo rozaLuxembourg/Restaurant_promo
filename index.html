@@ -6,6 +6,7 @@
       <link rel="stylesheet" href="./fonts.css">
       <link rel="stylesheet" href="./style.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+      <script src="main.js"></script>
       <title>HUNGRY PEOPLE (restaurant)</title>
     </head>
     <body>
@@ -135,9 +136,22 @@
       <section class="specialties">
         <h4 class="specialties__subtitle">Specialties</h4>
         <article class="specialties-content">
-          <div class="specialties-photo">
-            <img class="specialties__add-img" src="./images/square-big.svg" alt="Design Square">
-            <img class="specialties__img" src="./images/specialties.svg" alt="Strawberries">
+          <div class="specialties-photo-slider">
+          	<a class="prev" onclick="minusSlide()">&#10094;</a>
+          	<img class="specialties__add-img" src="./images/square-big.svg" alt="Design Square">
+          	<div class="slider-item">
+              <img src="./images/specialties.svg" alt="Strawberries">
+            </div>
+            <div class="slider-item">
+              <img src="./images/michelin-dish.jpg" alt="Michelin Appetizer">
+            </div>
+            <div class="slider-item">
+              <img src="./images/main-dish.jpg" alt="Main Dish">
+            </div>
+            <div class="slider-item">
+              <img src="./images/dessert.jpg" alt="Dessert">
+            </div>	
+            <a class="next" onclick="plusSlide()">&#10095;</a>
           </div>
           <article class="specialties-info">
             <h1 class="specialties__title">Chocolate Pancakes</h1>
@@ -148,10 +162,10 @@
             <p class="specialties__description">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
           </article>
         </article>
-        <div class="switch-block">
-          <div class="switch-block__point"></div>
-          <div class="switch-block__point_active"></div>
-          <div class="switch-block__point"></div>
+        <div class="slider-dots">
+          <div class="slider-dots__item" onclick="currentSlide(1)"></div>
+          <div class="slider-dots__item_active" onclick="currentSlide(2)"></div>
+          <div class="slider-dots__item" onclick="currentSlide(3)"></div>
         </div>
       </section>
       <section class="menu">
