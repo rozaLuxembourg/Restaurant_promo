@@ -452,15 +452,12 @@ body {
 }
 
 .specialties-photo-slider {
+  align-items: center;
   display: flex;
   height: 570px;
   overflow: hidden;
+  position: relative;
   width: 50%;
-}
-
-.specialties-photo-slider .slider-item {
-  transform: translateX(180px);
-  transform: translateY(-25px);
 }
 
 .specialties-photo-slider .slider-item img {
@@ -473,10 +470,10 @@ body {
 
 .specialties-photo-slider .prev, 
 .specialties-photo-slider .next {
+  position: absolute;
   cursor: pointer;
   height: 70px;
   width: auto;
-  margin-top: 30%;
   padding: 16px;
   color: white;
   font-weight: bold;
@@ -488,7 +485,7 @@ body {
 
 .specialties-photo-slider .next {
   border-radius: 3px 0 0 3px;
-  transform: translateX(50px);
+  right: 0;
   z-index: 3;
 }
 
@@ -499,7 +496,6 @@ body {
 
 .specialties__add-img {
   position: absolute;
-  transform: translateY(30px);
   z-index: 2;
 }
 
@@ -646,13 +642,13 @@ body {
   margin: 22px 31% 50px 31%;
 }
 
-.menu-card {
+.menu-tabs {
   display: flex;
   margin-bottom: 51px;
   margin-left: 21%;
 }
 
-.menu-card__item {
+.menu-tab {
   border-right: 1px solid rgba(51, 51, 51, 0.2);
   color: #333;
   height: 50px;
@@ -668,7 +664,18 @@ body {
   width: 120px;
 }
 
+.menu-tab.active {
+  
+  cursor: default;
+
+}
+
 .prices {
+  display: none;
+  padding-left: 80px;
+}
+
+.prices.active {
   display: flex;
   padding-left: 80px;
 }
@@ -951,26 +958,26 @@ input::placeholder {
 .header-menu__item,
 .header-menu__item:after,
 .header-menu__item:before,
-.menu-card__item,
-.menu-card__item:after,
-.menu-card__item:before {
+.menu-tab,
+.menu-tab:after,
+.menu-tab:before {
   transition: all .5s;
 }
 
 .header-menu__item:hover,
-.menu-card__item:hover {
+.menu-tab:hover {
   color: #e8c300;
 }
 
 /* Подчеркивание*/
 
 nav.header-menu a,
-nav.menu-card a {
+nav.menu-tabs a {
   position: relative;
 }
 
 nav.header-menu a:after,
-nav.menu-card a:after {
+nav.menu-tabs a:after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -984,7 +991,7 @@ nav.menu-card a:after {
 }
 
 nav.header-menu a:hover:after,
-nav.menu-card a:hover:after {
+nav.menu-tabs a:hover:after {
   width: 100%;
 }
 
@@ -1277,16 +1284,21 @@ button:hover {
     padding-top: 2.5vw;
   }
 
-  .specialties__add-img {
-  	transform: translateX(-15px);
-    transform: translateY(-20px);
-    z-index: 2;
+  .specialties-photo-slider {
+    position: relative;
+    height: 500px;
   }
 
-  .specialties__img {
-    margin-top: -15px;
-    transform: translateX(-315px);
-    z-index: 1;
+  .specialties-photo-slider .slider-item img {
+    height: 500px;
+  }
+
+  .specialties-photo-slider .prev, 
+  .specialties-photo-slider .next {
+    position: absolute;
+    height: 51px;
+    padding: 17px;
+    font-size: 17px;
   }
 
   .specialties-info {
@@ -1342,12 +1354,12 @@ button:hover {
     margin: 2vw 31% 4.5vw 31%;
   }
 
-  .menu-card {
+  .menu-tabs {
     margin-bottom: 5vw;
     margin-left: 18%;
   }
 
-  .menu-card__item {
+  .menu-tab {
     height: 47px;
     font-size: 12px;
     line-height: 16px;
