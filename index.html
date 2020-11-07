@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="initial-scale=1.0", width="device-width">
+      <link rel="stylesheet" href="./fonts.css">
+      <link rel="stylesheet" href="./style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+      <title>HUNGRY PEOPLE (restaurant)</title>
+    </head>
+    <body>
+      <section class="promo-page">
+        <header class="header">
+          <nav class="header-menu">
+            <a class="header-menu__item" href="#">Home</a>
+            <a class="header-menu__item" href="#">About</a>
+            <a class="header-menu__item" href="#">Team</a>
+            <a class="header-menu__item" href="#">Booking</a>
+            <div id="header-logo"></div>
+            <a class="header-menu__item" href="#">Menu</a>
+            <a class="header-menu__item" href="#">Galerie</a>
+            <a class="header-menu__item" href="#">Events</a>
+            <a class="header-menu__item" href="#">Contact</a>
+          </nav>
+        </header>
+        <article class="services">
+          <img class="services__img" src="./images/hours.svg" alt="Visiting Hours">
+          <div class="services-content">
+            <h4 class="services__content-subtitle">Restaurant</h4>
+            <h1 class="services__content-title">Hungry People</h1>
+            <div class="services-content content__rectangle"></div>
+            <div class="services-buttons">
+              <button class="services__btn_booking">Book Table</button>
+              <button class="services__btn_search">Explore</button>
+            </div>
+          </div>
+          <div class="tools">
+            <ul class="socials">
+              <li class="socials__item">
+                <a class="socials__item-link" href="#">
+                  <img class="socials__item-pic" src="./images/facebook.svg" alt="Facebook">
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__item-link" href="#">
+                  <img class="socials__item-pic" src="./images/twitter.svg" alt="Twitter">
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__item-link" href="#">
+                  <img class="socials__item-pic" src="./images/instagram.svg" alt="Instagram">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <div class="scroll">
+          <img class="scroll__btn" src="./images/down-btn.svg" alt="scroll button">
+        </div>
+      </section>
+      <section class="intro">
+        <article class="intro-content">
+          <h1 class="intro__heading">About Us</h1>
+          <div class="intro-rectangle">
+            <div class="rectangle-yellow"></div>
+          </div>
+          <p class="intro__caption"><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</strong></p>
+          <p class="intro__description">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+        </article>
+        <div class="intro-images">
+          <img class="intro__photo" src="./images/intro.jpg" alt="Intro Photo">
+          <img class="intro__add-img" src="./images/square-yellow.svg" alt="Design Square">
+        </div>
+      </section>
+      <section class="staff">
+        <h4 class="staff__subtitle">Our Team</h4>
+        <article class="staff-content">
+          <div class="staff-photo">
+            <img class="staff__img" src="./images/Group.svg" alt="Staff Photo">
+          </div>
+          <article class="staff-info">
+            <h1 class="staff__title">Master Chef</h1>
+            <div class="staff-rectangle">
+              <div class="rectangle-yellow"></div>
+            </div>
+            <p class="staff__caption"><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</strong></p>
+            <p class="staff__description">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+          </article>
+        </article>
+      </section>
+      <section class="booking">
+      	<article class="booking-content">
+      	  <div class="booking-details">
+            <h1 class="booking__title">Book A Table</h1>
+            <div class="booking-rectangle">
+              <div class="rectangle-yellow"></div>
+            </div>
+            <form class="booking-form">
+              <div class="booking-form-row">
+                <p><input class="booking-form__name"  type="text" name="name" placeholder="Name"></p>
+                <p><input class="booking-form__email"  type="email" name="email" placeholder="Email"></p>
+              </div>
+              <div class="booking-form-row">
+                <p><input class="booking-form__phone" type="number" name="phone" placeholder="Phone"></p>
+                <div class="booking-form-row__cell">
+                  <select  class="booking-form__guest-num" name="peopleNumber" required>
+                    <option>People</option>
+                    <option>2-4</option>
+                    <option>4-8</option>
+                    <option>10 and more</option>
+                  </select>
+                </div>
+              </div>
+              <div class="booking-form-row">
+                <p><input class="booking-form__date"  type="number" name="date" placeholder="Date (mm/dd)"></p>
+                <div class="booking-form-row__cell">
+                  <select class="booking-form__time" name="time" required>
+                    <option>Time</option>
+                    <option>7am - 12am</option>
+                    <option>12am - 6pm</option>
+                    <option>6pm - 10pm</option>
+                  </select>
+                </div>
+              </div>
+              <button class="booking-form__reserve" type="submit">Book Now</button>
+            </form>
+          </div>
+          <div class="booking-img">
+            <img class="clock__img" src="./images/clock-img.svg" alt="Clock">
+            <img class="clock__add-img" src="./images/square-small.svg" alt="Design Square">
+          </div>
+        </article>
+        <address class="booking__contact">Mon - Fri: <strong>8PM - 10PM</strong>, Sat - Sun: <strong>8PM - 3AM</strong>, Phone: <strong>+40 729 131 637/+40 726 458 782</strong></address>
+      </section>
+      <section class="specialties">
+        <h4 class="specialties__subtitle">Specialties</h4>
+        <article class="specialties-content">
+          <div class="specialties-photo-slider">
+            <a class="prev" onclick="minusSlide()">&#10094;</a>
+            <a class="next" onclick="plusSlide()">&#10095;</a>
+            <img class="specialties__add-img" src="./images/square-big.svg" alt="Design Square">
+            <div class="slider-item">
+              <img src="./images/specialties.svg" alt="Strawberries">
+            </div>
+            <div class="slider-item">
+              <img src="./images/michelin-dish.jpg" alt="Michelin Appetizer">
+            </div>
+            <div class="slider-item">
+              <img src="./images/main-dish.jpg" alt="Main Dish">
+            </div>
+            <div class="slider-item">
+              <img src="./images/dessert.jpg" alt="Dessert">
+            </div>	
+          </div>
+          <div class="specialties-info">
+            <h1 class="specialties__title">Chocolate Pancakes</h1>
+            <div class="specialties-rectangle">
+              <div class="rectangle-yellow"></div>
+            </div>
+            <p class="specialties__caption"><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</strong></p>
+            <p class="specialties__description">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+          </div>
+        </article>
+        <div class="slider-dots">
+          <div class="slider-dots__item" onclick="currentSlide(1)"></div>
+          <div class="slider-dots__item_active" onclick="currentSlide(2)"></div>
+          <div class="slider-dots__item" onclick="currentSlide(3)"></div>
+        </div>
+      </section>
+      <section class="menu">
+      	<div class="menu-header">
+          <h1 class="menu__title">Delicious Menu</h1>
+          <div class="menu-rectangle">
+            <div class="rectangle-yellow"></div>
+          </div>
+          <p class="menu__caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+        </div>
+        <nav class="menu-tabs">
+          <a data-tab="1" class="menu-tab active" href="#">Soupe</a>
+          <a data-tab="2" class="menu-tab" href="#">Pizza</a>
+          <a data-tab="3" class="menu-tab" href="#">Pasta</a>
+          <a data-tab="4" class="menu-tab" href="#">Desert</a>
+          <a data-tab="5" class="menu-tab" href="#">Wine</a>
+          <a data-tab="6" class="menu-tab" href="#">Beer</a>
+          <a data-tab="7" class="menu-tab" href="#">Drinks</a>
+        </nav>
+        <article data-tab-content="1" class="prices active">
+          <div class="price-list">
+            <div class="price-item">
+              <span class="price-item__name">PIZZA QUATRO STAGIONI</span>
+              <span class="price-item__total">55,68 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PIZZA QUATRO STAGIONI</span>
+              <span class="price-item__total">55,68 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PIZZA QUATRO STAGIONI</span>             
+              <span class="price-item__total">55,68 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PIZZA QUATRO STAGIONI</span>              
+              <span class="price-item__total">55,68 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PIZZA QUATRO STAGIONI</span>             
+              <span class="price-item__total">55,68 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PIZZA QUATRO STAGIONI</span>             
+              <span class="price-item__total">55,68 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PIZZA QUATRO STAGIONI</span>             
+              <span class="price-item__total">55,68 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+          </div>
+          <div class="price-list">
+            <div class="price-item">
+              <span class="price-item__name">PIZZA QUATRO STAGIONI</span>              
+              <span class="price-item__total">55,68 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PIZZA QUATRO STAGIONI</span>             
+              <span class="price-item__total">55,68 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PIZZA QUATRO STAGIONI</span>              
+              <span class="price-item__total">55,68 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PIZZA QUATRO STAGIONI</span>             
+              <span class="price-item__total">55,68 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PIZZA QUATRO STAGIONI</span>             
+              <span class="price-item__total">55,68 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PIZZA QUATRO STAGIONI</span>             
+              <span class="price-item__total">55,68 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PIZZA QUATRO STAGIONI</span>              
+              <span class="price-item__total">55,68 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+          </div>
+         <div class="price-list">
+            <div class="price-item">
+              <span class="price-item__name">PIZZA QUATRO STAGIONI</span>             
+              <span class="price-item__total">55,68 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PIZZA QUATRO STAGIONI</span>             
+              <span class="price-item__total">55,68 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PIZZA QUATRO STAGIONI</span>              
+              <span class="price-item__total">55,68 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PIZZA QUATRO STAGIONI</span>             
+              <span class="price-item__total">55,68 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PIZZA QUATRO STAGIONI</span>              
+              <span class="price-item__total">55,68 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PIZZA QUATRO STAGIONI</span>              
+              <span class="price-item__total">55,68 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PIZZA QUATRO STAGIONI</span>              
+              <span class="price-item__total">55,68 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+          </div>
+        </article>
+        <article data-tab-content="2" class="prices">
+          <div class="price-list">
+            <div class="price-item">
+              <span class="price-item__name">SOUPE DE POTIMARRON</span>
+              <span class="price-item__total">35,95 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SOUPE DE POTIMARRON</span>
+              <span class="price-item__total">35,95 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SOUPE DE POTIMARRON</span>
+              <span class="price-item__total">35,95 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SOUPE DE POTIMARRON</span>
+              <span class="price-item__total">35,95 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SOUPE DE POTIMARRON</span>
+              <span class="price-item__total">35,95 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SOUPE DE POTIMARRON</span>
+              <span class="price-item__total">35,95 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SOUPE DE POTIMARRON</span>
+              <span class="price-item__total">35,95 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+          </div>
+          <div class="price-list">
+            <div class="price-item">
+              <span class="price-item__name">SOUPE DE POTIMARRON</span>
+              <span class="price-item__total">35,95 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SOUPE DE POTIMARRON</span>
+              <span class="price-item__total">35,95 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SOUPE DE POTIMARRON</span>
+              <span class="price-item__total">35,95 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SOUPE DE POTIMARRON</span>
+              <span class="price-item__total">35,95 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SOUPE DE POTIMARRON</span>
+              <span class="price-item__total">35,95 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SOUPE DE POTIMARRON</span>
+              <span class="price-item__total">35,95 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SOUPE DE POTIMARRON</span>
+              <span class="price-item__total">35,95 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+          </div>
+          <div class="price-list">
+            <div class="price-item">
+              <span class="price-item__name">SOUPE DE POTIMARRON</span>
+              <span class="price-item__total">35,95 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SOUPE DE POTIMARRON</span>
+              <span class="price-item__total">35,95 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SOUPE DE POTIMARRON</span>
+              <span class="price-item__total">35,95 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SOUPE DE POTIMARRON</span>
+              <span class="price-item__total">35,95 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SOUPE DE POTIMARRON</span>
+              <span class="price-item__total">35,95 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SOUPE DE POTIMARRON</span>
+              <span class="price-item__total">35,95 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SOUPE DE POTIMARRON</span>
+              <span class="price-item__total">35,95 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+          </div>
+        </article>
+        <article data-tab-content="3" class="prices">
+          <div class="price-list">
+           <div class="price-item">
+              <span class="price-item__name">SPAGHETTI NAPOLITANA</span>
+              <span class="price-item__total">43,55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SPAGHETTI NAPOLITANA</span>
+              <span class="price-item__total">43,55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SPAGHETTI NAPOLITANA</span>
+              <span class="price-item__total">43,55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SPAGHETTI NAPOLITANA</span>
+              <span class="price-item__total">43,55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SPAGHETTI NAPOLITANA</span>
+              <span class="price-item__total">43,55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SPAGHETTI NAPOLITANA</span>
+              <span class="price-item__total">43,55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SPAGHETTI NAPOLITANA</span>
+              <span class="price-item__total">43,55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div> 
+          </div>
+          <div class="price-list">
+            <div class="price-item">
+              <span class="price-item__name">SPAGHETTI NAPOLITANA</span>
+              <span class="price-item__total">43,55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SPAGHETTI NAPOLITANA</span>
+              <span class="price-item__total">43,55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SPAGHETTI NAPOLITANA</span>
+              <span class="price-item__total">43,55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SPAGHETTI NAPOLITANA</span>
+              <span class="price-item__total">43,55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SPAGHETTI NAPOLITANA</span>
+              <span class="price-item__total">43,55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SPAGHETTI NAPOLITANA</span>
+              <span class="price-item__total">43,55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SPAGHETTI NAPOLITANA</span>
+              <span class="price-item__total">43,55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+          </div>
+          <div class="price-list">
+            <div class="price-item">
+              <span class="price-item__name">SPAGHETTI NAPOLITANA</span>
+              <span class="price-item__total">43,55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SPAGHETTI NAPOLITANA</span>
+              <span class="price-item__total">43,55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SPAGHETTI NAPOLITANA</span>
+              <span class="price-item__total">43,55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SPAGHETTI NAPOLITANA</span>
+              <span class="price-item__total">43,55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SPAGHETTI NAPOLITANA</span>
+              <span class="price-item__total">43,55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SPAGHETTI NAPOLITANA</span>
+              <span class="price-item__total">43,55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SPAGHETTI NAPOLITANA</span>
+              <span class="price-item__total">43,55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+          </div>
+        </article>
+        <article data-tab-content="4" class="prices">
+          <div class="price-list">
+            <div class="price-item">
+              <span class="price-item__name">CASSATA SICILIANA</span>
+              <span class="price-item__total">19,75 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CASSATA SICILIANA</span>
+              <span class="price-item__total">19,75 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CASSATA SICILIANA</span>
+              <span class="price-item__total">19,75 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CASSATA SICILIANA</span>
+              <span class="price-item__total">19,75 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CASSATA SICILIANA</span>
+              <span class="price-item__total">19,75 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CASSATA SICILIANA</span>
+              <span class="price-item__total">19,75 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CASSATA SICILIANA</span>
+              <span class="price-item__total">19,75 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+          </div>
+          <div class="price-list">
+            <div class="price-item">
+              <span class="price-item__name">CASSATA SICILIANA</span>
+              <span class="price-item__total">19,75 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CASSATA SICILIANA</span>
+              <span class="price-item__total">19,75 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CASSATA SICILIANA</span>
+              <span class="price-item__total">19,75 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CASSATA SICILIANA</span>
+              <span class="price-item__total">19,75 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CASSATA SICILIANA</span>
+              <span class="price-item__total">19,75 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CASSATA SICILIANA</span>
+              <span class="price-item__total">19,75 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CASSATA SICILIANA</span>
+              <span class="price-item__total">19,75 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+          </div>
+          <div class="price-list">
+            <div class="price-item">
+              <span class="price-item__name">CASSATA SICILIANA</span>
+              <span class="price-item__total">19,75 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CASSATA SICILIANA</span>
+              <span class="price-item__total">19,75 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CASSATA SICILIANA</span>
+              <span class="price-item__total">19,75 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CASSATA SICILIANA</span>
+              <span class="price-item__total">19,75 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CASSATA SICILIANA</span>
+              <span class="price-item__total">19,75 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CASSATA SICILIANA</span>
+              <span class="price-item__total">19,75 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CASSATA SICILIANA</span>
+              <span class="price-item__total">19,75 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+          </div>
+        </article>
+        <article data-tab-content="5" class="prices">
+          <div class="price-list">
+            <div class="price-item">
+              <span class="price-item__name">CERASUOLO DI VITTORIA</span>
+              <span class="price-item__total">17,99 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CERASUOLO DI VITTORIA</span>
+              <span class="price-item__total">17,99 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CERASUOLO DI VITTORIA</span>
+              <span class="price-item__total">17,99 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CERASUOLO DI VITTORIA</span>
+              <span class="price-item__total">17,99 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CERASUOLO DI VITTORIA</span>
+              <span class="price-item__total">17,99 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CERASUOLO DI VITTORIA</span>
+              <span class="price-item__total">17,99 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CERASUOLO DI VITTORIA</span>
+              <span class="price-item__total">17,99 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+          </div>
+          <div class="price-list">
+            <div class="price-item">
+              <span class="price-item__name">CERASUOLO DI VITTORIA</span>
+              <span class="price-item__total">17,99 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CERASUOLO DI VITTORIA</span>
+              <span class="price-item__total">17,99 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CERASUOLO DI VITTORIA</span>
+              <span class="price-item__total">17,99 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CERASUOLO DI VITTORIA</span>
+              <span class="price-item__total">17,99 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CERASUOLO DI VITTORIA</span>
+              <span class="price-item__total">17,99 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CERASUOLO DI VITTORIA</span>
+              <span class="price-item__total">17,99 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CERASUOLO DI VITTORIA</span>
+              <span class="price-item__total">17,99 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+          </div>
+          <div class="price-list">
+            <div class="price-item">
+              <span class="price-item__name">CERASUOLO DI VITTORIA</span>
+              <span class="price-item__total">17,99 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CERASUOLO DI VITTORIA</span>
+              <span class="price-item__total">17,99 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CERASUOLO DI VITTORIA</span>
+              <span class="price-item__total">17,99 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CERASUOLO DI VITTORIA</span>
+              <span class="price-item__total">17,99 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CERASUOLO DI VITTORIA</span>
+              <span class="price-item__total">17,99 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CERASUOLO DI VITTORIA</span>
+              <span class="price-item__total">17,99 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">CERASUOLO DI VITTORIA</span>
+              <span class="price-item__total">17,99 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+          </div>
+        </article>
+        <article data-tab-content="6" class="prices">
+          <div class="price-list">
+            <div class="price-item">
+              <span class="price-item__name">PERONI NASTRO AZZURRO</span>
+              <span class="price-item__total">1,96 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PERONI NASTRO AZZURRO</span>
+              <span class="price-item__total">1,96 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PERONI NASTRO AZZURRO</span>
+              <span class="price-item__total">1,96 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PERONI NASTRO AZZURRO</span>
+              <span class="price-item__total">1,96 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PERONI NASTRO AZZURRO</span>
+              <span class="price-item__total">1,96 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PERONI NASTRO AZZURRO</span>
+              <span class="price-item__total">1,96 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PERONI NASTRO AZZURRO</span>
+              <span class="price-item__total">1,96 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+          </div>
+          <div class="price-list">
+            <div class="price-item">
+              <span class="price-item__name">PERONI NASTRO AZZURRO</span>
+              <span class="price-item__total">1,96 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PERONI NASTRO AZZURRO</span>
+              <span class="price-item__total">1,96 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PERONI NASTRO AZZURRO</span>
+              <span class="price-item__total">1,96 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PERONI NASTRO AZZURRO</span>
+              <span class="price-item__total">1,96 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PERONI NASTRO AZZURRO</span>
+              <span class="price-item__total">1,96 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PERONI NASTRO AZZURRO</span>
+              <span class="price-item__total">1,96 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PERONI NASTRO AZZURRO</span>
+              <span class="price-item__total">1,96 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+          </div>
+          <div class="price-list">
+            <div class="price-item">
+              <span class="price-item__name">PERONI NASTRO AZZURRO</span>
+              <span class="price-item__total">1,96 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PERONI NASTRO AZZURRO</span>
+              <span class="price-item__total">1,96 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PERONI NASTRO AZZURRO</span>
+              <span class="price-item__total">1,96 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PERONI NASTRO AZZURRO</span>
+              <span class="price-item__total">1,96 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PERONI NASTRO AZZURRO</span>
+              <span class="price-item__total">1,96 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PERONI NASTRO AZZURRO</span>
+              <span class="price-item__total">1,96 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">PERONI NASTRO AZZURRO</span>
+              <span class="price-item__total">1,96 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+          </div>
+        </article>
+        <article data-tab-content="7" class="prices">
+          <div class="price-list">
+            <div class="price-item">
+              <span class="price-item__name">SGROPPIN0 AL LIMONE</span>
+              <span class="price-item__total">10.55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SGROPPIN0 AL LIMONE</span>
+              <span class="price-item__total">10.55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SGROPPIN0 AL LIMONE</span>
+              <span class="price-item__total">10.55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SGROPPIN0 AL LIMONE</span>
+              <span class="price-item__total">10.55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SGROPPIN0 AL LIMONE</span>
+              <span class="price-item__total">10.55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SGROPPIN0 AL LIMONE</span>
+              <span class="price-item__total">10.55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SGROPPIN0 AL LIMONE</span>
+              <span class="price-item__total">10.55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+          </div>
+          <div class="price-list">
+            <div class="price-item">
+              <span class="price-item__name">SGROPPIN0 AL LIMONE</span>
+              <span class="price-item__total">10.55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SGROPPIN0 AL LIMONE</span>
+              <span class="price-item__total">10.55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SGROPPIN0 AL LIMONE</span>
+              <span class="price-item__total">10.55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SGROPPIN0 AL LIMONE</span>
+              <span class="price-item__total">10.55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SGROPPIN0 AL LIMONE</span>
+              <span class="price-item__total">10.55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SGROPPIN0 AL LIMONE</span>
+              <span class="price-item__total">10.55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SGROPPIN0 AL LIMONE</span>
+              <span class="price-item__total">10.55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+          </div>
+          <div class="price-list">
+            <div class="price-item">
+              <span class="price-item__name">SGROPPIN0 AL LIMONE</span>
+              <span class="price-item__total">10.55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SGROPPIN0 AL LIMONE</span>
+              <span class="price-item__total">10.55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SGROPPIN0 AL LIMONE</span>
+              <span class="price-item__total">10.55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SGROPPIN0 AL LIMONE</span>
+              <span class="price-item__total">10.55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SGROPPIN0 AL LIMONE</span>
+              <span class="price-item__total">10.55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SGROPPIN0 AL LIMONE</span>
+              <span class="price-item__total">10.55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+            <div class="price-item">
+              <span class="price-item__name">SGROPPIN0 AL LIMONE</span>
+              <span class="price-item__total">10.55 USD</span>
+              <p class="price-item__info">Integer ullamcorper neque eu purus euismod</p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="events">
+        <h4 class="events__subtitle">Private Events</h4>
+          <article class="events-photos">
+            <div class="weddings">
+              <img class="wedding-ring__img" src="./images/wedding-photo.png" alt="Wedding Ring">
+            </div>
+            <div class="corporate-parties">
+              <img class="corporate-parties__img" src="./images/corporates.png" alt="Corporate Parties">
+            </div>
+          </article>
+        <address class="events__contact">For private events please call: +40 729 131 637/+40 726 458 782 or use the contact form.</address>
+      </section>
+      <section class="photo-galerie">
+        <div class="interior-photos">
+          <img class="interior-photos__neon" src="./images/neon.png" alt="Neon Sign">
+          <img class="interior-photos__fireplace" src="./images/fireplace.png" alt="Fireplace">
+          <img class="interior-photos__banquet-hall" src="./images/banquethall.png" alt="Banquet Hall">
+          <img class="interior-photos__bar" src="./images/bar.png" alt="Bar">
+        </div>
+      </section>
+      <section class="contact-info">
+      	<div class="contact-header">
+          <h1 class="contact__title">Contact</h1>
+          <div class="contact-rectangle">
+            <div class="rectangle-yellow"></div>
+          </div>
+          <p class="contact__caption"><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</strong></p>
+        </div>
+        <div class="client-contact">
+          <div class="client-contact-row">
+            <p><input class="client-contact-row__cell" type="text" name="name" placeholder="Name"></p>
+            <p><input class="client-contact-row__cell" type="email" name="email" placeholder="Email"></p>
+            <p><input class="client-contact-row__cell" type="number" name="phone" placeholder="Phone"></p>
+          </div>
+          <p><textarea class="client-contact__message" type="text" name="message" rows="10" cols="45" placeholder="Message"></textarea></p>
+          <div class="company-contact-row">
+            <ul class="company-details">
+              <li class="company-details__location"><i class="fa fa-map-marker"></i>5th London Boulevard, U.K.</li>
+              <li class="company-details__phone"><i class="fa fa-phone"></i>+40 729 131 637/+40 726 458 782</li>
+              <li class="company-details__email"><i class="fa fa-envelope"></i>office@mindblister.com</li>
+            </ul>
+            <button class="contact__submission" type="submit">Send Message</button>
+          </div>
+        </div>
+      </section>
+      <section class="map-location">
+      	<div class="map-img"></div>
+        <footer class="footer">
+          <p class="footer__copyright">© Copyright <strong>Mindblister</strong> 2019</p>
+        </footer>
+      </section>
+      <script>
+      	var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlide() {
+         showSlides(slideIndex += 1);
+        }
+
+        function minusSlide() {
+         showSlides(slideIndex -= 1);  
+        }
+
+        function currentSlide(n) {
+         showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("slider-item");
+          var dots = document.getElementsByClassName("slider-dots__item");
+          if (n > slides.length) {
+            slideIndex = 1;
+          }
+          if (n < 1) {
+            slideIndex = slides.length;
+          }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+        }
+
+        var tabNavs = document.querySelectorAll(".menu-tab");
+        var tabPanes = document.querySelectorAll(".prices");
+
+        for (var i = 0; i < tabNavs.length; i++) {
+
+          tabNavs[i].addEventListener("click", function(e){
+            e.preventDefault();
+            var activeTabAttr = e.target.getAttribute("data-tab");
+
+            for (var j = 0; j < tabNavs.length; j++) {
+              var contentAttr = tabPanes[j].getAttribute("data-tab-content");
+
+              if (activeTabAttr === contentAttr) {
+                tabNavs[j].classList.add("active");
+                tabPanes[j].classList.add("active"); 
+              } else {
+                tabNavs[j].classList.remove("active");
+                tabPanes[j].classList.remove("active");
+              }
+            };
+          });
+        }
+      </script>
+    </body>
+  </html>
+
+  
